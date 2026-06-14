@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+       <a-plane position="0.079 -0.939 2.364" rotation="180 0 0" width="20" height="15" color="#192A36 "onclick="this.setAttribute('material', 'color:red')"></a-plane>
+     <a-plane position="0.581 -0.253 -2.594" rotation="-90 0 0" width="20" height="10" color="#192A36 "onclick="this.setAttribute('material', 'color:green')"></a-plane>
+      <a-plane position="9.437 -0.152 -1.686" rotation="180 90 0" width="20" height="15" color="#192A36 "onclick="this.setAttribute('material', 'color: red')"></a-plane>
+      <a-plane position="-9.471 -0.303 -0.109" rotation="-180 -90 0" width="20" height="15" color="#192A36 "onclick="this.setAttribute('material', 'color: red')"></a-plane>
+      <a-plane position="0.188 -0.289 -7.586" rotation="180 180  0" width="20" height="15" color="#192A36 "onclick="this.setAttribute('material', 'color: red')"></a-plane>
+      <a-sky color="black"></a-sky>
+      <a-entity geometry="primitive: cylinder; height: 10;" material="color: #573535" position="8.514 2.149 -6.441" ></a-entity>
+      <a-entity geometry="primitive: cylinder; height: 10;" material="color: #573535" position="-7.552 2.088 -6.672" ></a-entity>
+      <a-entity geometry="primitive: cylinder; height: 10;" material="color: #573535" position="8.550 2.106 1.533"></a-entity>
+      <a-entity geometry="primitive: cylinder; height: 10;" material="color: #573535" position="-8.920 2.327 1.450" ></a-entity>
+      <a-entity id="door1" geometry="primitive: box; height:5.000; width:6.000" material="color: #192A36 " position="8.237 2.586 -2.239" rotation="0 90 0" onclick=" this.setAttribute('material' , 'color:green')"></a-entity>
+      <a-entity geometry="primitive:sphere ; height:2; width:3" material="color: yellow " position="1.823 0.760 -4.790" rotation="0 0 0" onclick=" document.querySelector('#door1').setAttribute('material','color:green')"></a-entity>
+      <a-entity geometry="primitive:sphere ; height:2; width:3 material="color: #BA2222 " position="0 0 0" rotation="0 0 0"animation__click="property: position; to: 2.5 3 -6; startEvents: click; dur: 1000"></a-entity>
+      <a-entity
+        text="value: Escape Room; color: white; align: center; width: 4"
+        position="0 0 -2">
+      </a-entity>
+      <a-plane position="18.608 -0.690 2.364" rotation="180 0 0" width="20" height="15" color="#192A36 "onclick="this.setAttribute('material', 'color:#A82525')"></a-plane>
+     <a-plane position="20.375 0.020 -2.594" rotation="-90 0 0" width="20" height="10" color="#192A36 "onclick="this.setAttribute('material', 'color:green')"></a-plane>
+      <a-plane position="27.120 -0.303 -0.109" rotation="0.000 -90.988 180.000" width="20" height="15" color="#192A36 "onclick="this.setAttribute('material', 'color:#A82525')"></a-plane>
+      <a-plane position="17.687 -0.289 -7.586" rotation="180 180  0" width="20" height="15" color="#192A36 "onclick="this.setAttribute('material', 'color: #A82525')"></a-plane>
+      <a-sky color="black"></a-sky>
+      <a-entity geometry="primitive: cylinder; height: 10;" material="color: #573535" position="26.019 2.149 -6.441" ></a-entity>
+      <a-entity geometry="primitive: cylinder; height: 10;" material="color: #573535" position="10.670 2.088 -6.672" ></a-entity>
+      <a-entity geometry="primitive: cylinder; height: 10;" material="color: #573535" position="10.754 2.010 1.533"></a-entity>
+      <a-entity id="door2" geometry="primitive: box; height:5.000; width:6.000" material="color: #192A36 " position="26.391 2.015 -2.508" rotation="0 90 0" onclick=" this.setAttribute('material' , 'color:green')"></a-entity>
+       <a-entity geometry="primitive: cylinder; height: 10;" material="color: #573535" position="26.362 2.327 1.450" ></a-entity>
+     <a-box position="25.318 2.149 -6.441"onclick="this.setAttribute('position',0 3 0')" animation__color="property: components.material.material.color; type: color; to:red; startEvents: click; dur: 1000"></a-box>
+     <a-box position="11.526 2.088 -6.672"onclick="this.setAttribute('position',0 3 0')" animation__color="property: components.material.material.color; type: color; to: red; startEvents: click; dur: 1000"></a-box>
+     <a-box position="11.488 2.449 1.533"onclick="this.setAttribute('position',0 3 0')" animation__color="property: components.material.material.color; type: color; to: red; startEvents: click; dur: 1000"></a-box>
+     <a-box position="25.538 2.327 1.450"onclick="this.setAttribute('position',0 3 0')" animation__color="property: components.material.material.color; type: color; to: green; startEvents: click; dur: 1000" onclick="document.querySelector('#door2').setAttribute('material','color:green')"></a-box>
+     <a-box position="20.063 2.149 2.390"onclick="this.setAttribute('position',0 3 0')" animation__color="property: components.material.material.color; type: color; to: red; startEvents: click; dur: 1000"></a-box>
+     <a-box position="19.421 2.149 -7.351"onclick="this.setAttribute('position',0 3 0')" animation__color="property: components.material.material.color; type: color; to: green; startEvents: click; dur: 1000"></a-box>
+     <a-text text="value: find the correct button ; color: white; align: center; width: 4"
+        position="16.551 1.585 -2.000"rotation=0.000 -116.092 0.000></a-text>
+    <a-camera position="0 1.6 3">
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+    </a-scene>
+  </body>
+</html>
